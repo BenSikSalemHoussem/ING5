@@ -1,0 +1,17 @@
+{
+  "clients_valides": [
+    {"nom": "Ali Ben Salah", "email": "ali.bensalah@mail.com", "age": 22},
+    {"nom": "Sarra Trabelsi", "email": "sarra.trabelsi@mail.com", "age": 30},
+    {"nom": "Yassine Gharbi", "email": "yassine.gharbi@mail.com", "age": 18}
+  ],
+  "clients_invalides": [
+    {"nom": "", "email": "sans.nom@mail.com", "age": 25},
+    {"nom": "Mineur Test", "email": "mineur@mail.com", "age": 15},
+    {"nom": "Email Invalide", "email": "pas-un-email", "age": 20}
+  ],
+  "produits": [
+    {"reference": "LIVRE-001", "titre": "Introduction à Python", "prix": 25.0, "stock_initial": 10},
+    {"reference": "LIVRE-002", "titre": "Algorithmique Avancée", "prix": 32.5, "stock_initial": 5},
+    {"reference": "LIVRE-003", "titre": "Bases de Données", "prix": 28.0, "stock_initial": 0}
+  ]
+}

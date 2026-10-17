@@ -1,0 +1,168 @@
+[
+    {
+        "id": "TC01",
+        "fonction": "addition",
+        "input": {
+            "a": 2,
+            "b": 3
+        },
+        "methode": "2 + 3",
+        "expected_output": 5,
+        "expected_exception": null
+    },
+    {
+        "id": "TC02",
+        "fonction": "addition",
+        "input": {
+            "a": -2,
+            "b": 5
+        },
+        "methode": "-2 + 5",
+        "expected_output": 3,
+        "expected_exception": null
+    },
+    {
+        "id": "TC03",
+        "fonction": "addition",
+        "input": {
+            "a": 0,
+            "b": 0
+        },
+        "methode": "0 + 0",
+        "expected_output": 0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC04",
+        "fonction": "division",
+        "input": {
+            "a": 10,
+            "b": 2
+        },
+        "methode": "10 / 2",
+        "expected_output": 5.0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC05",
+        "fonction": "division",
+        "input": {
+            "a": 7,
+            "b": 2
+        },
+        "methode": "7 / 2",
+        "expected_output": 3.5,
+        "expected_exception": null
+    },
+    {
+        "id": "TC06",
+        "fonction": "division",
+        "input": {
+            "a": 10,
+            "b": 0
+        },
+        "methode": "10 / 0",
+        "expected_output": null,
+        "expected_exception": {
+            "type": "ValueError",
+            "message": "Division par zéro impossible"
+        }
+    },
+    {
+        "id": "TC07",
+        "fonction": "prix_total",
+        "input": {
+            "prix_unitaire": 12.5,
+            "quantite": 4
+        },
+        "methode": "12.50 * 4",
+        "expected_output": 50.0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC08",
+        "fonction": "prix_total",
+        "input": {
+            "prix_unitaire": 0,
+            "quantite": 5
+        },
+        "methode": "0 * 5",
+        "expected_output": 0.0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC09",
+        "fonction": "prix_total",
+        "input": {
+            "prix_unitaire": -2,
+            "quantite": 3
+        },
+        "methode": "-2 * 3 (prix négatif)",
+        "expected_output": null,
+        "expected_exception": {
+            "type": "ValueError",
+            "message": "Le prix et la quantité doivent être positifs"
+        }
+    },
+    {
+        "id": "TC10",
+        "fonction": "appliquer_remise",
+        "input": {
+            "prix": 100,
+            "pourcentage": 20
+        },
+        "methode": "100 - (100 * 20 / 100)",
+        "expected_output": 80.0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC11",
+        "fonction": "appliquer_remise",
+        "input": {
+            "prix": 49.99,
+            "pourcentage": 0
+        },
+        "methode": "49.99 - (49.99 * 0 / 100)",
+        "expected_output": 49.99,
+        "expected_exception": null
+    },
+    {
+        "id": "TC12",
+        "fonction": "appliquer_remise",
+        "input": {
+            "prix": 80,
+            "pourcentage": 100
+        },
+        "methode": "80 - (80 * 100 / 100)",
+        "expected_output": 0.0,
+        "expected_exception": null
+    },
+    {
+        "id": "TC13",
+        "fonction": "appliquer_remise",
+        "input": {
+            "prix": 50,
+            "pourcentage": 101
+        },
+        "methode": "Pourcentage supérieur à 100",
+        "expected_output": null,
+        "expected_exception": {
+            "type": "ValueError",
+            "message": "Pourcentage de remise invalide"
+        }
+    },
+    {
+        "id": "TC14",
+        "fonction": "moyenne",
+        "input": {
+            "notes": [
+                12,
+                14,
+                16
+            ]
+        },
+        "methode": "(12 + 14 + 16) / 3",
+        "expected_output": 14.0,
+        "expected_exception": null
+    }
+]

@@ -1,0 +1,31 @@
+{
+    "addition": [
+        {"a": 2, "b": 3, "result": 5},
+        {"a": -2, "b": 5, "result": 3},
+        {"a": 0, "b": 0, "result": 0}
+    ],
+
+    "division": [
+        {"a": 10, "b": 2, "result": 5.0},
+        {"a": 7, "b": 2, "result": 3.5},
+        {"a": 10, "b": 0, "exception": "ValueError", "message": "Division par zéro impossible"}
+    ],
+
+    "prix_total": [
+        {"prix_unitaire": 12.5, "quantite": 4, "result": 50.0},
+        {"prix_unitaire": 0, "quantite": 5, "result": 0.0},
+        {"prix_unitaire": -2, "quantite": 3, "exception": "ValueError"}
+    ],
+
+    "appliquer_remise": [
+        {"prix": 100, "pourcentage": 20, "result": 80.0},
+        {"prix": 49.99, "pourcentage": 0, "result": 49.99},
+        {"prix": 80, "pourcentage": 100, "result": 0.0},
+        {"prix": 50, "pourcentage": 101, "exception": "ValueError"}
+    ],
+
+    "moyenne": [
+        {"notes": [12, 14, 16], "result": 14.0},
+        {"notes": [], "exception": "ValueError"}
+    ]
+}

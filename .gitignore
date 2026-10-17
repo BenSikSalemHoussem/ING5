@@ -1,0 +1,9 @@
+.DS_Store
+*.pem
+*.key
+.env*
+**/build/
+**/.dart_tool/
+__pycache__/
+*.tfstate*
+.terraform/
